@@ -4,7 +4,7 @@ body,
     display: flex;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(rgb(107, 192, 245, 0.8), rgba(4, 70, 115, 0.8)), url(img/bluejay1.jpg);
+    background-image: linear-gradient(rgb(107, 192, 245, 0.8), rgba(4, 70, 115, 0.8));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -23,28 +23,28 @@ body,
     margin-bottom: 3rem;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
-.fact {
+.card {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    background-image: linear-gradient(rgba(196, 112, 3, 0.8), rgba(241, 171, 91, 0.8)), url(img/bluejay1.jpg);
+    background-image: linear-gradient(rgba(196, 112, 3, 0.8), rgba(241, 171, 91, 0.8));
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     height: 100vh;
 }
-.fact-content {
-    width: 29rem;
-}
-.fact-title {
+.card-title {
     margin: 0;
     font-size: 5.3rem;
     font-weight: 600;
-    text-align: center;
 }
-.bluejay.picture {
-  width: 300px;        /* Set a fixed or relative width */
-  height: auto;        /* Let the height adjust automatically to keep the aspect ratio */
-  border-radius: 15px; /* Gives the image rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */
+.bluejay-picture {
+    display: flex;
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
 }
